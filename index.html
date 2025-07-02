@@ -1,449 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Avinash Chauhan | Web Developer</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avinash Chauhan | Web Developer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
-    }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
 
-    .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  padding: 0 20px;
-  background-color: #0a192f;
-  color: #ccd6f6;
-}
+      .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        padding: 0 20px;
+        background-color: #0a192f;
+        color: #ccd6f6;
+      }
 
-.hero .intro {
-  color: #64ffda;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
+      .hero .intro {
+        color: #64ffda;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.hero h2 {
-  font-size: 1.2rem;
-  color: #8892b0;
-  margin: 10px 0;
-}
-
-.hero .description {
-  max-width: 600px;
-  color: #8892b0;
-  margin: 20px 0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
-.hero .cta-btn {
-  padding: 12px 24px;
-  font-size: 1rem;
-  background: transparent;
-  color: #64ffda;
-  border: 1px solid #64ffda;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-  text-decoration: none;
-}
-
-.hero .cta-btn:hover {
-  background: #64ffda;
-  color: #0a192f;
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
-}
-
-
-    @media (max-width: 768px) {
       .hero h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
       }
-      .hero p {
+
+      .hero h2 {
+        font-size: 1.2rem;
+        color: #8892b0;
+        margin: 10px 0;
+      }
+
+      .hero .description {
+        max-width: 600px;
+        color: #8892b0;
+        margin: 20px 0;
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+
+      .hero .cta-btn {
+        padding: 12px 24px;
         font-size: 1rem;
+        background: transparent;
+        color: #64ffda;
+        border: 1px solid #64ffda;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+        text-decoration: none;
       }
-    }
 
-    .services {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  text-align: center;
-}
+      .hero .cta-btn:hover {
+        background: #64ffda;
+        color: #0a192f;
+        box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+      }
 
-.services h2 {
-  font-size: 2rem;
-  color: #0d6efd;
-  margin-bottom: 40px;
-}
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+      }
 
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+      .services {
+        padding: 60px 20px;
+        background-color: #ffffff;
+        text-align: center;
+      }
 
-.service {
-  background: #f1f3f5;
-  padding: 30px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+      .services h2 {
+        font-size: 2rem;
+        color: #0d6efd;
+        margin-bottom: 40px;
+      }
 
-.service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-}
+      .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-.service h3 {
-  color: #343a40;
-  margin-bottom: 10px;
-}
+      .service {
+        background: #f1f3f5;
+        padding: 30px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
 
-.service p {
-  color: #555;
-}
+      .service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      }
 
-.projects {
-  background: #f8f9fa;
-  padding: 60px 20px;
-  text-align: center;
-}
+      .service h3 {
+        color: #343a40;
+        margin-bottom: 10px;
+      }
 
-.projects h2 {
-  font-size: 2rem;
-  color: #0d6efd;
-  margin-bottom: 40px;
-}
+      .service p {
+        color: #555;
+      }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+      .projects {
+        background: #f8f9fa;
+        padding: 60px 20px;
+        text-align: center;
+      }
 
-.project-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: left;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  border: 1px solid #e4e4e4;
-}
+      .projects h2 {
+        font-size: 2rem;
+        color: #0d6efd;
+        margin-bottom: 40px;
+      }
 
-.project-card h3 {
-  color: #0d6efd;
-  margin-bottom: 10px;
-}
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-.project-card p {
-  color: #555;
-  margin-bottom: 15px;
-}
+      .project-card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: left;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        border: 1px solid #e4e4e4;
+      }
 
-.project-card a {
-  color: #0d6efd;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.2s;
-}
+      .project-card h3 {
+        color: #0d6efd;
+        margin-bottom: 10px;
+      }
 
-.project-card a:hover {
-  color: #084298;
-}
+      .project-card p {
+        color: #555;
+        margin-bottom: 15px;
+      }
 
-.project-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
-  transform: translateY(-5px);
-}
+      .project-card a {
+        color: #0d6efd;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
 
-.about {
-  background: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-}
+      .project-card a:hover {
+        color: #084298;
+      }
 
-.about h2 {
-  font-size: 2rem;
-  color: #0d6efd;
-  margin-bottom: 40px;
-}
+      .project-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+        transform: translateY(-5px);
+      }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+      .about {
+        background: #ffffff;
+        padding: 60px 20px;
+        text-align: center;
+      }
 
-.about-card {
-  background: #f1f3f5;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: left;
-}
+      .about h2 {
+        font-size: 2rem;
+        color: #0d6efd;
+        margin-bottom: 40px;
+      }
 
-.about-card h3 {
-  color: #343a40;
-  margin-bottom: 10px;
-}
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-.about-card p {
-  color: #555;
-}
+      .about-card {
+        background: #f1f3f5;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: left;
+      }
 
-.contact {
-  padding: 80px 20px;
-  text-align: center;
-  background-color: #0f172a;
-  color: #e2e8f0;
-}
+      .about-card h3 {
+        color: #343a40;
+        margin-bottom: 10px;
+      }
 
-.contact-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #cbd5e1;
-  margin-bottom: 20px;
-}
+      .about-card p {
+        color: #555;
+      }
 
-.contact-description {
-  max-width: 600px;
-  margin: 0 auto 40px;
-  font-size: 1.1rem;
-  color: #94a3b8;
-  line-height: 1.6;
-}
+      .contact {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #0f172a;
+        color: #e2e8f0;
+      }
 
-.say-hello-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  color:  #64ffda;;
-  border: 1px solid  #64ffda;;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
+      .contact-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #cbd5e1;
+        margin-bottom: 20px;
+      }
 
-.say-hello-btn:hover {
-  background-color:  #64ffda;;
-  color: #0f172a;
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
-}
+      .contact-description {
+        max-width: 600px;
+        margin: 0 auto 40px;
+        font-size: 1.1rem;
+        color: #94a3b8;
+        line-height: 1.6;
+      }
 
-.footer {
-  background-color: #1e293b;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+      .say-hello-btn {
+        display: inline-block;
+        padding: 14px 32px;
+        color: #64ffda;
+        border: 1px solid #64ffda;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
 
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
+      .say-hello-btn:hover {
+        background-color: #64ffda;
+        color: #0f172a;
+        box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+      }
 
-.footer p {
-  margin-bottom: 10px;
-}
+      .footer {
+        background-color: #1e293b;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
 
-.social-links a {
-  color: #38bdf8;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-.social-links a:hover {
-  color: #ffdd57;
-}
+      .footer p {
+        margin-bottom: 10px;
+      }
 
-.service,
-.about-card,
-.project-card {
-  background: #1e293b;
-  color: #f1f5f9;
-  border: 1px solid #334155;
-}
+      .social-links a {
+        color: #38bdf8;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
 
-.service h3,
-.project-card h3,
-.about-card h3 {
-  color: #38bdf8;
-}
+      .social-links a:hover {
+        color: #ffdd57;
+      }
 
-.service p,
-.project-card p,
-.about-card p {
-  color: #cbd5e1;
-}
+      .service,
+      .about-card,
+      .project-card {
+        background: #1e293b;
+        color: #f1f5f9;
+        border: 1px solid #334155;
+      }
 
-.projects,
-.services,
-.about,
-.contact {
-  background-color: #0f172a;
-}
+      .service h3,
+      .project-card h3,
+      .about-card h3 {
+        color: #38bdf8;
+      }
 
-.hero h1,
-.services h2,
-.projects h2,
-.about h2,
-.contact h2 {
-  color: #38bdf8;
-  font-weight: 700;
-}
+      .service p,
+      .project-card p,
+      .about-card p {
+        color: #cbd5e1;
+      }
 
-@media (max-width: 768px) {
-  .hero .description {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} 
+      .projects,
+      .services,
+      .about,
+      .contact {
+        background-color: #0f172a;
+      }
 
+      .hero h1,
+      .services h2,
+      .projects h2,
+      .about h2,
+      .contact h2 {
+        color: #38bdf8;
+        font-weight: 700;
+      }
 
+      @media (max-width: 768px) {
+        .hero .description {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <p class="intro">Hi, my name is</p>
+      <h1>Avinash Chauhan.</h1>
+      <h2>I build modern websites and web apps.</h2>
+      <p class="description">
+        I create fast, responsive websites and web applications — and provide
+        professional development services tailored to your business needs. From
+        landing pages to full-scale web apps, I turn ideas into scalable,
+        user-friendly digital solutions using Angular and modern technologies.
+      </p>
 
+      <a class="cta-btn" href="mailto:chauhanavinash878@gmail.com"
+        >Get in Touch</a
+      >
+    </section>
 
-  </style>
-</head>
-<body>
+    <section class="services">
+      <h2>Web Development Services</h2>
+      <div class="service-cards">
+        <div class="service">
+          <h3>Custom Website Design</h3>
+          <p>Beautiful, responsive websites tailored to your business goals.</p>
+        </div>
+        <div class="service">
+          <h3>Landing Pages</h3>
+          <p>
+            High-converting single-page sites to capture leads and grow sales.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Website Redesign</h3>
+          <p>
+            Modernize your existing website with improved UX and fresh visuals.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Maintenance & Support</h3>
+          <p>
+            Ongoing updates, bug fixes, and content changes as your site grows.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section class="hero">
-  <p class="intro">Hi, my name is</p>
-  <h1>Avinash Chauhan.</h1>
-  <h2>I build modern websites and web apps.</h2>
-  <p class="description">
-    I create websites and web applications that are fast, responsive, and accessible. I specialize in translating thoughtful designs into pixel-perfect, scalable interfaces using Angular, JavaScript, and modern web technologies. I collaborate closely with cross-functional teams to craft seamless digital experiences that are both user-friendly and high-performing. Beyond work, I'm constantly exploring new tools, frameworks, and ideas to stay ahead in front-end innovation.
-  </p>
-  <a class="cta-btn" href="mailto:chauhanavinash878@gmail.com">Get in Touch</a>
-</section>
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <!-- Real Project -->
+        <div class="project-card">
+          <h3>Agrikheti</h3>
+          <p>
+            A professional farming and agriculture website developed with a
+            focus on clean UI and mobile responsiveness.
+          </p>
+          <a href="https://agrikheti.com" target="_blank">View Project</a>
+        </div>
 
+        <!-- Dummy Project 1 -->
+        <div class="project-card">
+          <h3>Dronaaim.ai</h3>
+          <p>
+            An AI-powered drone solution website crafted for precision,
+            innovation, and performance in tech presentation.
+          </p>
+          <a href="https://dronaaim.ai" target="_blank">View Project</a>
+        </div>
 
-  <section class="services">
-  <h2>Web Development Services</h2>
-  <div class="service-cards">
-    <div class="service">
-      <h3>Custom Website Design</h3>
-      <p>Beautiful, responsive websites tailored to your business goals.</p>
-    </div>
-    <div class="service">
-      <h3>Landing Pages</h3>
-      <p>High-converting single-page sites to capture leads and grow sales.</p>
-    </div>
-    <div class="service">
-      <h3>Website Redesign</h3>
-      <p>Modernize your existing website with improved UX and fresh visuals.</p>
-    </div>
-    <div class="service">
-      <h3>Maintenance & Support</h3>
-      <p>Ongoing updates, bug fixes, and content changes as your site grows.</p>
-    </div>
-  </div>
-</section>
+        <!-- Dummy Project 2 -->
+        <div class="project-card">
+          <h3>Falcon Safety Tech</h3>
+          <p>
+            Corporate safety solutions website built with a modern layout and
+            secure, scalable frontend structure.
+          </p>
+          <a href="https://falconsafetytech.com" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<section class="projects">
-  <h2>Featured Projects</h2>
-  <div class="project-grid">
+        <div class="project-card">
+          <h3>Axiom – Falcon System</h3>
+          <p>
+            A custom web-based interface developed for internal use, focusing on
+            functional workflow and performance. (Currently not fully mobile
+            responsive.)
+          </p>
+          <a href="https://axiom.falconsystem.com" target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
 
-    <!-- Real Project -->
-    <div class="project-card">
-      <h3>Agrikheti</h3>
-      <p>A professional farming and agriculture website developed with a focus on clean UI and mobile responsiveness.</p>
-      <a href="https://agrikheti.com" target="_blank">View Project</a>
-    </div>
+    <section class="about">
+      <h2>Why Choose Me?</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>6+ Years Experience</h3>
+          <p>
+            Proven background in crafting modern, responsive, and clean web
+            interfaces.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Client-Focused</h3>
+          <p>
+            I prioritize business goals, user experience, and fast turnaround.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Clean & SEO-Friendly Code</h3>
+          <p>
+            Websites built with performance, accessibility, and search
+            visibility in mind.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Mobile Responsive</h3>
+          <p>Looks great on every device — phones, tablets, and desktops.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Dummy Project 1 -->
-    <div class="project-card">
-    <h3>Dronaaim.ai</h3>
-    <p>An AI-powered drone solution website crafted for precision, innovation, and performance in tech presentation.</p>
-    <a href="https://dronaaim.ai" target="_blank">View Project</a>
-  </div>
+    <section class="contact">
+      <h2 class="contact-title">Get In Touch</h2>
+      <p class="contact-description">
+        Looking to build something amazing or have a question? My inbox is
+        always open. Whether you have a query or just want to say hi, I’ll do my
+        best to get back to you!
+      </p>
+      <a href="mailto:chauhanavinash878@gmail.com" class="say-hello-btn"
+        >Say Hello</a
+      >
+    </section>
 
-    <!-- Dummy Project 2 -->
-    <div class="project-card">
-    <h3>Falcon Safety Tech</h3>
-    <p>Corporate safety solutions website built with a modern layout and secure, scalable frontend structure.</p>
-    <a href="https://falconsafetytech.com" target="_blank">View Project</a>
-  </div>
-
-  <div class="project-card">
-  <h3>Axiom – Falcon System</h3>
-  <p>A custom web-based interface developed for internal use, focusing on functional workflow and performance. (Currently not fully mobile responsive.)</p>
-  <a href="https://axiom.falconsystem.com" target="_blank">View Project</a>
-</div>
-
-  </div>
-</section>
-
-<section class="about">
-  <h2>Why Choose Me?</h2>
-  <div class="about-grid">
-    <div class="about-card">
-      <h3>6+ Years Experience</h3>
-      <p>Proven background in crafting modern, responsive, and clean web interfaces.</p>
-    </div>
-    <div class="about-card">
-      <h3>Client-Focused</h3>
-      <p>I prioritize business goals, user experience, and fast turnaround.</p>
-    </div>
-    <div class="about-card">
-      <h3>Clean & SEO-Friendly Code</h3>
-      <p>Websites built with performance, accessibility, and search visibility in mind.</p>
-    </div>
-    <div class="about-card">
-      <h3>Mobile Responsive</h3>
-      <p>Looks great on every device — phones, tablets, and desktops.</p>
-    </div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2 class="contact-title">Get In Touch</h2>
-  <p class="contact-description">
-   Looking to build something amazing or have a question? My inbox is always open. Whether you have a query or just want to say hi, I’ll do my best to get back to you!
-  </p>
-  <a href="mailto:chauhanavinash878@gmail.com" class="say-hello-btn">Say Hello</a>
-</section>
-
-
-
-<footer class="footer">
-  <div class="footer-content">
-    <p>Designed & Built by Avinash Chauhan</p>
-    <!-- <div class="social-links">
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Designed & Built by Avinash Chauhan</p>
+        <!-- <div class="social-links">
       <a href="https://github.com/your-github" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
       <a href="https://instagram.com/your-instagram" target="_blank">Instagram</a>
     </div> -->
-  </div>
-</footer>
-
-
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
